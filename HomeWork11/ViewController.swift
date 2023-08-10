@@ -29,6 +29,7 @@ final class ViewController: UIViewController, UITextFieldDelegate {
         volumeProgress.progress = sender.value
         volumeTextField.text = String(format: "%.1f", sender.value)
     }
+    
     @IBAction private func volumeTextFieldChanged(_ sender: UITextField) {
         if let text = sender.text, let volumeLevel = Float(text) {
             volumeSlider.value = volumeLevel
@@ -38,13 +39,16 @@ final class ViewController: UIViewController, UITextFieldDelegate {
             volumeTextField.placeholder = "Enter digits"
         }
     }
+    
     @IBAction private func handleTap(_ sender: UITapGestureRecognizer) {
         volumeTextField.resignFirstResponder()
     }
+    
     func textFieldShouldReturn(_ volumeTextField: UITextField) -> Bool {
         volumeTextField.resignFirstResponder()
         return true
     }
+    
     // MARK: - 2 Block
     @IBAction private func setTimePressed() {
         let formatter = DateFormatter()
@@ -54,10 +58,12 @@ final class ViewController: UIViewController, UITextFieldDelegate {
         timePicker.isEnabled = false
         clearButton.isEnabled = true
     }
+    
     // MARK: - 3 Block
     @IBAction private func toggleAlarm(_ sender: UISwitch) {
         setTimeLabelColor()
     }
+    
     @IBAction private func clearButtonPressed() {
         alarmSwitch.setOn(false, animated: true)
         setTimeLabelColor()
@@ -66,6 +72,7 @@ final class ViewController: UIViewController, UITextFieldDelegate {
         timePicker.isEnabled = true
         clearButton.isEnabled = false
     }
+    
     private func setTimeLabelColor() {
         setTimeLabel.backgroundColor = alarmSwitch.isOn ? .orange : .lightGray
     }
