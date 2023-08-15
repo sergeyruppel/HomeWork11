@@ -290,6 +290,7 @@
 				DEVELOPMENT_TEAM = XMRMHLG4UV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HomeWork11/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Alarm Clock";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +322,7 @@
 				DEVELOPMENT_TEAM = XMRMHLG4UV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HomeWork11/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Alarm Clock";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

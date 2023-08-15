@@ -19,6 +19,10 @@ final class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    private func setupUI() {
         volumeTextField.delegate = self
         setTimeLabel.layer.cornerRadius = 5
         setTimeLabel.clipsToBounds = true
